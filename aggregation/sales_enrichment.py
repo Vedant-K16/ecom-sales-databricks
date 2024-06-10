@@ -1,6 +1,6 @@
 # Databricks notebook source
 # This cell if for debug purposes
-# %run ../shared/functions.py
+# %run ../shared/functions
 
 # COMMAND ----------
 
