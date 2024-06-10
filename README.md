@@ -30,9 +30,9 @@ Please follow below path
             - notebook_path: ../clean/clean_tables.py
          - Workflow 3. data_aggregations
             - Task 1: sales_enrichement
-                 -notebook_path: ../aggregations/sales_enrichement.py
+                 -notebook_path: ../aggregation/sales_enrichement.py
             - Task 2: profit_aggregations
-                - notebook_path: ../aggregations/profit_aggregations.py```
+                - notebook_path: ../aggregation/profit_aggregations.py```
 4. We can use dbx and yml templeting to control the databricks job/workflow config and pass the notebook path as suggested
 5. Also we can run tests/test.py as an workflow before running the actual data workflows to ensure the tests are passed.
    ```
