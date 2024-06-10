@@ -29,12 +29,12 @@ Some more thoughts -
 # COMMAND ----------
 
 # DBTITLE 1,Importing required functions
-# MAGIC %run ../shared/functions.py
+# MAGIC %run ../shared/functions
 
 # COMMAND ----------
 
 # DBTITLE 1,Raw Data Ingestion
-# MAGIC %run ../raw/raw_tables.py
+# MAGIC %run ../raw/raw_tables
 
 # COMMAND ----------
 
