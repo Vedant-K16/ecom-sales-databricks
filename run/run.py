@@ -44,12 +44,12 @@ Some more thoughts -
 # COMMAND ----------
 
 # DBTITLE 1,sales enrichment
-# MAGIC %run ../aggregations/sales_enrichment
+# MAGIC %run ../aggregation/sales_enrichment
 
 # COMMAND ----------
 
 # DBTITLE 1,profit aggregation
-# MAGIC %run ../aggregations/profit_aggregations
+# MAGIC %run ../aggregation/profit_aggregations
 
 # COMMAND ----------
 
