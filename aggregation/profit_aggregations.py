@@ -31,11 +31,3 @@ create_table(
     table_name="profit",
     mode="overwrite"
 )
-
-# COMMAND ----------
-
-# MAGIC %sql
-# MAGIC select round(sum(p),2)
-# MAGIC   from (select round(profit,2) p,* from orders_clean)
-# MAGIC   where 1=1
-# MAGIC     and customer_id='TS-21160'
