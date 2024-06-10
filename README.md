@@ -1,6 +1,7 @@
 # ecom-sales-databricks
 ## Introduction
-This repository contributes towards data processing of a ecom-sales-data and analysis
+- This repository contributes towards data processing of a ecom-sales-data and analysis
+- This tool is built using a databricks community version and developed with a TDD approach
 
 ## Prerequisites
 Before running the analysis, you'll need to ensure the following prerequisites are met:
@@ -14,11 +15,11 @@ Please follow below path
   2. run run/run.py
 
 ## Some Thoughts
-This notebook (run.run.py) is starting point for the e-com sales data analysis project.
-I have ttched all the notebooks in sequence in order to generate a desired output
-This tool is built using a databricks community version and hence i had to upload source files to a Filestore/tables location (dbfs:/FileStore/tables).
-You will also be able to get the source data copy in sources folder of a git repo https://github.com/Vedant-K16/ecom-sales-databricks
-In order to support TDD, you can check for tests folder and can be run as standalone thing.
+- This notebook (run.run.py) is starting point for the e-com sales data analysis project.
+- I have attched all the notebooks in sequence in order to generate a desired output
+- Source files are uploaded to a Filestore/tables location (dbfs:/FileStore/tables).
+- You will also be able to get the source data in sources folder of a git repo https://github.com/Vedant-K16/ecom-sales-databricks
+- In order to support TDD, you can check for tests folder and can be run as standalone thing.
 
 1. "These are not implemented from databricks workflow perpective but doable after dbx installation and few enhancement"
 2. Also, at the production level, you can run below notebooks (except functions.py) individually per workflow with associated cluster.
