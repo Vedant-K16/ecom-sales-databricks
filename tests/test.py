@@ -1,5 +1,5 @@
 # Databricks notebook source
-# MAGIC %run ../shared/functions.py
+# MAGIC %run ../shared/functions
 
 # COMMAND ----------
 
