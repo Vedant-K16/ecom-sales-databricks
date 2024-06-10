@@ -13,8 +13,7 @@ Please follow below path
   1. Make sure you have all the prerequistes
   2. run run/run.py
 
-##Some Thoughts
-
+## Some Thoughts
 This notebook (run.run.py) is starting point for the e-com sales data analysis project.
 I have attched all the notebooks in sequence in order to generate a desired output
 This tool is built using a databricks community version and hence i had to upload source files to a Filestore/tables location (dbfs:/FileStore/tables).
