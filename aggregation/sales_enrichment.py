@@ -16,23 +16,7 @@ orders_clean = spark.read.table("orders_clean")
 
 # order table enriched with customer and product info and called as sales
 
-sales = (orders_clean.withColumn("profit",bround(col("profit"),2)).alias("order")
-                   .join(customers_clean.alias("customer"),["Customer_id"])
-                   .join(products_clean.alias("product"),["Product_ID"])
-                   .selectExpr(
-                               "order.order_id",
-                               "order.order_date",
-                               "order.discount",
-                               "order.price",
-                               "order.profit",
-                               "order.quantity",
-                               "order.ship_date",
-                               "customer.customer_name",
-                               "customer.country",
-                               "product.category product_category",
-                               "product.`Sub-Category` product_sub_category",
-                               )
-                   )
+sales_df = sales_enrichment(orders_clean,products_clean,customers_clean)
 create_table(
     df=sales,
     table_format="delta",
