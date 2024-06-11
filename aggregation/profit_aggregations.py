@@ -3,7 +3,9 @@
 # %run ../shared/functions
 
 # COMMAND ----------
+# MAGIC %run ./agg_and_enrich_functions
 
+# COMMAND ----------
 from pyspark.sql.functions import *
 
 orders_clean = spark.read.table("orders_clean")
