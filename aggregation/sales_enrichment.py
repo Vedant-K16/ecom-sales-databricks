@@ -16,9 +16,9 @@ orders_clean = spark.read.table("orders_clean")
 
 # order table enriched with customer and product info and called as sales
 
-sales_df = sales_enrichment(orders_clean,products_clean,customers_clean)
+sales_df = sales_enrichment(orders_clean,customers_clean,products_clean)
 create_table(
-    df=sales,
+    df=sales_df,
     table_format="delta",
     mode="overwrite",
     table_name="sales",
