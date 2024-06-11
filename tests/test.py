@@ -115,7 +115,7 @@ class TestHelpers(unittest.TestCase):
         spark.sql(f"drop table if exists {table_name[2]}")
     def test_profit_aggregation(self):
         """
-        
+        This method is to check if the profit aggregations are coming up as expected or not
         """
         dummy_data = DataFrameTest.generate_dummy_data()
         actual_df = profit_aggregation(dummy_data.get("test_order_df"),dummy_data.get("test_customer_df"),dummy_data.get("test_product_df"))
@@ -131,6 +131,9 @@ class TestHelpers(unittest.TestCase):
         self.assertEqual(is_data_same,True)
 
     def test_sales_enrichment(self):
+        """
+        This method is to verify the sales enrichments
+        """
         dummy_data = DataFrameTest.generate_dummy_data()
         actual_df = sales_enrichment(dummy_data.get("test_order_df"),dummy_data.get("test_customer_df"),dummy_data.get("test_product_df"))
 
@@ -143,5 +146,6 @@ class TestHelpers(unittest.TestCase):
         is_data_same = DataFrameTest(actual_df,expected_df).compare_data()
         self.assertEqual(is_schema_same,True)
         self.assertEqual(is_data_same,True)
+        
 r = unittest.main(argv=[''], verbosity=2, exit=False)
 assert r.result.wasSuccessful(), '::Test Failed::'
