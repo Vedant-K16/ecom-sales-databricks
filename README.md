@@ -6,16 +6,16 @@
 ## Prerequisites
 Before running the analysis, you'll need to ensure the following prerequisites are met:
 - You have a databricks cluster setup to run the notebook.
-- You have to install below libraries:
+- You have to install below library:
     * maven - com.crealytics:spark-excel_2.12:0.13.5
 
 ## How to run
 Please follow below path
-  1. Make sure you have all the prerequistes
+  1. Make sure you have all the prerequisites
   2. run run/run.py
 
 ## Some Thoughts
-- This notebook (run.run.py) is starting point for the e-com sales data analysis project.
+- This notebook (run.py) is starting point for the e-com sales data analysis project.
 - I have attched all the notebooks in sequence in order to generate a desired output
 - Source files are uploaded to a Filestore/tables location (dbfs:/FileStore/tables).
 - You will also be able to get the source data in sources folder of a git repo https://github.com/Vedant-K16/ecom-sales-databricks
